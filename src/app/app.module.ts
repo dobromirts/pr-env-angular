@@ -4,10 +4,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { View1Component } from './view1/view1.component';
+import { IgxCalendarModule, IgxNavbarModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule } from '@infragistics/igniteui-angular';
+import { FormsModule } from '@angular/forms';
 import { View2Component } from './view2/view2.component';
 import { View3Component } from './view3/view3.component';
-import { IgxNavbarModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule } from '@infragistics/igniteui-angular';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,11 +21,12 @@ import { FormsModule } from '@angular/forms';
     HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    IgxCalendarModule,
+    FormsModule,
     IgxNavbarModule,
     IgxAvatarModule,
     IgxButtonModule,
-    IgxRippleModule,
-    FormsModule
+    IgxRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
